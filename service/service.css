@@ -1,0 +1,394 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    height: 100px;
+}
+
+:root {
+    --color-primary: #0056b3;
+    --font-primary: 16px;
+    --font-family: Mulish, san-serif;
+}
+
+
+.header-nav-main {
+    height: 80px;
+    display: flex;
+    padding: 16px 30px;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    background-color: #fff;
+    width: 100%;
+    font-weight: 500;
+}
+
+
+.header-logo {
+    width: 20%;
+}
+
+.header-nav {
+    width: 50%;
+}
+
+.header-nav-list {
+    display: flex;
+    float: left;
+    margin: 0;
+
+}
+
+.header-nav-list li {
+    list-style: none;
+    margin-left: 10px;
+}
+
+.header-nav-list li a {
+    font-size: 18px;
+    text-decoration: none;
+    color: #1f2125;
+    padding-right: 10px;
+    font-weight: 550;
+}
+
+.header-nav-list li a:hover {
+    color: var(--color-primary);
+}
+
+.header-nav-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: var(--font-primary);
+}
+
+.header-nav-right li {
+    list-style: none;
+}
+
+.header-nav-right a {
+    text-decoration: none;
+    color: #1f2125;
+    cursor: pointer;
+}
+
+.header-nav-right a:hover {
+    color: var(--color-primary);
+}
+
+.header-nav-right-button {
+    width: 170px;
+    height: 46px;
+    background: #1464F4;
+    color: #fff;
+    font-size: 16px;
+    font-family: var(--font-primary);
+    border: none;
+    border-radius: 3px;
+    padding: 0 24px;
+    margin: 0 12px 0 25px;
+    font-weight: 600;
+}
+
+.header-nav-right-button:hover {
+    background-color: #fff;
+    border: 1px solid #1464F4;
+    color: #1464F4;
+    cursor: pointer;
+}
+
+
+.button-text:hover {
+    color: #1464F4;
+}
+
+.nav-bars {
+    font-size: 24px;
+    margin-left: 30px;
+    padding: 0 10px;
+}
+
+.slidebar { 
+    z-index: 1;
+    position:fixed;
+    box-sizing: border-box;
+    width: 344px;
+    height: 100%;
+    left: -350px;
+    top: 0px;
+    list-style-type: none;
+    background-color: white;
+    padding: 20px;
+    transition: all .3s;
+}
+
+.slidebar > ul > li { 
+    font-size: 18px;
+    padding-top: 25px;
+}
+
+  .slidebar > ul > li > a{  
+    padding: 10px;
+    font-size: 14px;
+    text-decoration: none;
+    color: black;
+    line-height: 3;
+    box-sizing: border-box;
+  
+}
+
+  .slidebar > ul > li > a:hover {  
+    height: auto;
+    border: 5px dotted rgb(175, 218, 235);
+    border-radius: 5px;
+    background-color: rgb(175, 218, 235);
+}
+
+  #check{
+    display: none;
+
+}
+
+  label #btn, label #cancel {
+    position: absolute;
+    cursor: pointer;
+  
+}
+
+  label #btn {
+    position: absolute;
+    top: 6px;
+    font-size: 32px;
+    color: black;
+    right: 50px;
+    &:hover{
+        color: blue;
+    }
+}
+
+  label #cancel {
+    z-index: 1111;
+    left: -190px;
+    top: 17px;
+    font-size: 30px;
+    padding: 4px 9px;
+    transition: all .3s ease;
+    &:hover{
+        color: blue;
+    }
+}
+
+  #check:checked ~ .slidebar { 
+       left: 78%;
+}
+
+  #check:checked ~ label #btn {
+    left: 250px;
+    opacity: 0;
+    pointer-events: none;
+}
+
+  #check:checked ~ label #cancel {
+    left: 98%;
+    position: fixed;
+  
+}
+.block-slide {
+    width: 100%;
+    height: auto;
+    padding: 100px 20px;
+}
+
+.block-slide .title {
+    text-align: center;
+    font-size: 46px;
+    font-family: Mulish, sans-serif;
+    color: #3C3C3C;
+    padding: 60px 20px;
+    position: relative;
+   
+}
+
+.btn-book a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.btn-book {
+    width: 250px;
+    border-radius: 3px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 50px;
+    height: 50px;
+    position: absolute;
+    background-color: #1464F4;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%, -50%);
+    padding-bottom: 20px;
+    text-align: center;
+    cursor: pointer;
+    font-family: var(--font-family);
+}
+
+.btn-book:hover {
+    background-color: #fff;
+    border: 1px solid #1464F4;
+
+}
+
+.btn-book a:hover {
+    color: #1464F4;
+}
+
+.image-repair {
+    margin-top: 68px;
+    min-width: 100%;
+}
+
+.block_produce-service {
+    padding: 0px 20px;
+    height: 800px;
+    width: 100%;
+}
+
+.content {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.content .title {
+    font-size: 34px;
+    font-family: var(--font-family);
+}
+
+.content .disc {
+    padding: 10px 0;
+    font-size: 16px;
+    font-family: var(--font-family);
+}
+.name-service {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+} 
+
+.step {
+    cursor: pointer;
+
+}
+
+.step .layer,
+.layer2 {
+    width: 100px;
+    height: 100px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.step .layer {
+    background-color: #1464F4;
+    position: relative;
+    left: 24%;
+}
+
+.step .layer2 {
+    background-color: #F7F7F9;
+}
+
+.step img{
+    width: 40px;
+    height: 40px;
+    margin: 20px;
+}
+
+.step .field-title {
+    padding: 20px;
+    color: #7A99AC;
+}
+
+.step div {
+    font-size: 18px;
+    color: #3C3C3C;
+    font-family: var(--font-family);
+}
+
+.step:hover .layer2{
+    background-color: #1464F4;
+}
+
+.content-step {
+    padding-top: 100px;
+   position: relative;
+}
+
+.content-step ul{
+    margin: auto !important;
+    list-style: none;
+    width: 60%;
+    padding: 20px;
+    background-color: #F7F7F9;
+}
+
+.content-step ul li {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.content-step .icon-repair {
+    font-size: 12px;
+    padding: 0 10px 0 0;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+}
+
+.btn-blue,
+.btn-white {
+    width: 550px;
+    height: 60px;
+    background: #1464F4;
+    color: #fff;
+    font-size: 16px;
+    font-family: var(--font-primary);
+    border: none;
+    border-radius: 3px;
+    padding: 0 24px;
+    margin: 0 12px 0 25px;
+    font-weight: 550;
+    cursor: pointer;
+}
+
+.btn-blue:hover {
+    background-color: #fff;
+    color: #1464F4;
+    border: 1px solid #0056b3;
+}
+
+.btn-white {
+    background-color: #fff;
+    color: #1464F4;
+    border: 1px solid #0056b3;
+}
+
+.btn-white:hover {
+    background: #1464F4;
+    color: #fff;
+}
+

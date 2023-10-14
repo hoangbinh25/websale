@@ -1,0 +1,228 @@
+/* PC: width >= 1024px */
+@media (min-width : 1024px){
+    
+}
+
+/* Tablet: width >= 767px and width < 1023px*/
+
+@media (min-width: 767px) and (max-width: 1023px) {
+
+    
+    .header-nav-main {
+        display: block;
+        position: relative;
+        height: 60px;
+    }
+
+    .header-logo a {
+        position: absolute;
+        top: 24%;
+        left: 10%;
+    }
+
+    .icon-menu {
+        float: left;
+        height: auto;
+        position: absolute;
+        right: 4%;
+        top: 28%;
+    }
+
+    .header-nav-list {
+        display: none;
+    }
+
+    .header-nav-right .user, 
+    .header-nav-right-button {
+        display: none;
+    }
+
+    .banner-title {
+        font-size: 18px;
+    }
+
+    .name-bike {
+        font-size: 12px;
+    }
+
+    .block-battery-left {
+        height: 600px;
+    }
+
+    .battery-car,
+    .battery-Bike {
+        width: 100%;
+        height: 350px;
+    }
+    
+    .block-battery-right {
+        display: none;
+    }
+
+    .card-service button{
+        margin: 20px;
+    }
+
+    .block-sale {
+        height: 880px;
+    }
+
+    .col-left,
+    .col-right {
+        height: 353px;
+        width: 100%;
+    }
+
+    .form-register .btn-regis {
+        left: 71%;
+    }
+
+    .fmenu strong{
+        width: 100px;
+    }
+
+    footer {
+        display: block;
+    }
+    .fmenu {
+        display: block;
+    }
+
+}
+/* Smartphone: width < 767px */
+
+@media (max-width: 766px) {
+
+    .header-nav-main {
+        height: 60px;
+        display: block;
+        position: relative;
+    }
+
+    .header-logo a {
+        position: absolute;
+        top: 24%;
+        left: 0%;
+    }
+
+    .icon-menu {
+        float: left;
+        position: absolute;
+        right: 3%;
+        top: 28%;
+    }
+    
+    .header-nav-list {
+        display: none;
+    }
+
+    .header-nav-right .user, 
+    .header-nav-right-button {
+        display: none;
+    }
+
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+        display: none;
+    }
+
+    .banner-title {
+        font-size: 10px;
+    }
+
+    .name-car {
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .container-car {
+        padding: 0;
+    }
+    
+    .name-bike {
+        font-size: 10px;
+        display: inline-block;
+    }
+
+    .block-battery-left {
+        width: 400px;
+        padding: 0;
+    }
+
+    .title-battery {
+        font-size: 18px !important;
+    }
+
+    .card-service {
+        margin: 20px 0 0 20px;
+        width: 100%;
+    }
+
+    .container-service .btn-primary-blue,
+    .btn-primary-white{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 120px;
+        font-size: 10px;
+    }
+
+    .container-service .discrip {
+        font-size: 16px !important;
+    }
+
+    .green-tree-vf {
+        margin-top: 64px;
+        width: 100%;
+    }
+
+    .green-tree-vf .container {
+        justify-content: center;
+        align-items: center;
+        font-size: 16px !important;
+        margin-right: -24px;
+    }
+
+    .container .disc-image {
+        text-align: center;
+        margin: 0 20px !important;
+    }
+    
+    .container .btn-primary-blue {
+        width: 100%;
+        margin: 10px;
+    }
+
+    .block-sale {
+        display: none;
+    }
+
+    .form-register {
+        width: 100%;
+        position: relative;
+    }
+
+    .form-register input {
+        display: block;
+       
+    }
+    .form-register .btn-regis {
+        bottom: -3%;
+        left: -1%;
+        width: 100%;
+       position: absolute;
+    }
+
+    .form-register .p2 {
+        margin: 0;
+        margin-top: 70px;
+    }
+
+    footer {
+        display: block;
+    }
+    .fmenu {
+        display: block;
+    }
+
+}

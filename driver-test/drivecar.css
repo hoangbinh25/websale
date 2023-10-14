@@ -1,0 +1,321 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --color-primary: #0056b3;
+  --font-primary: 16px;
+  --font-family: Mulish, san-serif;
+}
+
+
+.header-nav-main {
+  height: 80px;
+  display: flex;
+  padding: 16px 30px;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  background-color: #fff;
+  width: 100%;
+  font-weight: 500;
+}
+
+
+.header-logo {
+  width: 20%;
+}
+
+.header-nav {
+  width: 50%;
+}
+
+.header-nav-list {
+  display: flex;
+  float: left;
+  margin: 0;
+
+}
+
+.header-nav-list li {
+  list-style: none;
+  margin-left: 10px;
+}
+
+.header-nav-list li a {
+  font-size: 18px;
+  text-decoration: none;
+  color: #1f2125;
+  padding-right: 10px;
+  font-weight: 550;
+}
+
+.header-nav-list li a:hover {
+  color: var(--color-primary);
+}
+
+.header-nav-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: var(--font-primary);
+}
+
+.header-nav-right li {
+  list-style: none;
+}
+
+.header-nav-right a {
+  text-decoration: none;
+  color: #1f2125;
+  cursor: pointer;
+}
+
+.header-nav-right a:hover {
+  color: var(--color-primary);
+}
+
+.header-nav-right-button {
+  width: 170px;
+  height: 46px;
+  background: #1464F4;
+  color: #fff;
+  font-size: 16px;
+  font-family: var(--font-primary);
+  border: none;
+  border-radius: 3px;
+  padding: 0 24px;
+  margin: 0 12px 0 25px;
+  font-weight: 600;
+}
+
+.header-nav-right-button:hover {
+  background-color: #fff;
+  border: 1px solid #1464F4;
+  color: #1464F4;
+  cursor: pointer;
+}
+
+
+.button-text:hover {
+  color: #1464F4;
+}
+
+.nav-bars {
+  font-size: 24px;
+  margin-left: 30px;
+  padding: 0 10px;
+}
+
+.slidebar { 
+  z-index: 1;
+  position:fixed;
+  box-sizing: border-box;
+  width: 344px;
+  height: 100%;
+  left: -350px;
+  top: 0px;
+  list-style-type: none;
+  background-color: white;
+  padding: 20px;
+  transition: all .3s;
+}
+
+.slidebar > ul > li { 
+  font-size: 18px;
+  padding-top: 25px;
+}
+
+.slidebar > ul > li > a{  
+  padding: 10px;
+  font-size: 14px;
+  text-decoration: none;
+  color: black;
+  line-height: 3;
+  box-sizing: border-box;
+
+}
+
+.slidebar > ul > li > a:hover {  
+  height: auto;
+  border: 5px dotted rgb(175, 218, 235);
+  border-radius: 5px;
+  background-color: rgb(175, 218, 235);
+}
+
+#check{
+  display: none;
+
+}
+
+label #btn, label #cancel {
+  position: absolute;
+  cursor: pointer;
+
+}
+
+label #btn {
+  position: absolute;
+  top: 6px;
+  font-size: 32px;
+  color: black;
+  right: 50px;
+  &:hover{
+      color: blue;
+  }
+}
+
+label #cancel {
+  z-index: 1111;
+  left: -190px;
+  top: 17px;
+  font-size: 30px;
+  padding: 4px 9px;
+  transition: all .3s ease;
+  &:hover{
+      color: blue;
+  }
+}
+
+#check:checked ~ .slidebar { 
+     left: 78%;
+}
+
+#check:checked ~ label #btn {
+  left: 250px;
+  opacity: 0;
+  pointer-events: none;
+}
+
+#check:checked ~ label #cancel {
+  left: 98%;
+  position: fixed;
+
+}
+nav {
+  height: auto;
+  width: 100%;
+background-color: #F8F9FA;
+}
+
+.nav-logo {
+  width: 50%;
+  margin: 10px;
+
+}
+
+.nav-form {
+  font-family: Mulish,sans-serif;
+  width: 50%;
+  height: auto;
+  margin: 10px;
+  padding-top: 5%;
+  background-color: white;
+  justify-content: center;
+  align-items: center;  
+  padding: 30px 30px;
+
+}
+
+
+.nav-form h3, p {
+  text-align: center;
+}
+
+#select-car {
+  width: 55%;
+  height: 40px
+}
+
+.select-location {
+  width: 100%;
+  display: flex;
+}
+
+#country {
+  width: 80%;
+  height: 40px;
+}
+
+#state {
+  width: 80%;
+  height: 40px;
+}
+
+.yeucau {
+  margin-bottom: 5px;
+  width: 90%;
+  height: 40px;
+}
+
+.submit-form {
+  width: 90%;
+  color: white;
+  background-color: #979797 ;
+  height: 40px;
+  border: 0;
+  border-radius: 3px;
+    &:hover {
+  background-color: #1464F4;
+  }
+}
+
+hr {
+text-align: center;
+}
+
+footer {
+  background-color: #f8f8f8;
+  width: 100%;
+  height: 100%;
+  padding-left: 1%;
+}
+
+.footer {
+  display: flex;
+}
+
+.fmenu {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  float: left;
+}
+
+
+.fmenu > li > a {
+  padding: 25px;
+  color: #8a8a8a;
+}
+
+.fmenu > li > a:hover {
+  color: #1464F4;
+  text-decoration: none;
+}
+
+.fmenu-1 {
+  list-style-type: none;
+  margin: 0;
+  display: inline-block;
+}
+
+.fmenu-1 li {
+  font-weight: 500;
+  margin: 18px 0;
+}
+
+.icon-down {
+  margin-left: 8px;
+  cursor: pointer;
+}
+
+.fmenu-1 > li > a{
+  color: black;
+  padding-top: 5%;
+}
+
+

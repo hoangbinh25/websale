@@ -1,0 +1,643 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --color-primary: #0056b3;
+    --font-primary: 16px;
+    --font-family: Mulish, san-serif;
+}
+
+.pd-top {
+    padding-top: 96px;
+}
+
+.header-nav-main {
+    height: 80px;
+    display: flex;
+    padding: 16px 30px;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    background-color: #fff;
+    width: 100%;
+    font-weight: 500;
+}
+
+
+.header-logo {
+    width: 20%;
+}
+
+.header-nav {
+    width: 50%;
+}
+
+.header-nav-list {
+    display: flex;
+    float: left;
+    margin: 0;
+
+}
+
+.header-nav-list li {
+    list-style: none;
+    margin-left: 10px;
+}
+
+.header-nav-list li a {
+    font-size: 18px;
+    text-decoration: none;
+    color: #1f2125;
+    padding-right: 10px;
+    font-weight: 550;
+}
+
+.header-nav-list li a:hover {
+    color: var(--color-primary);
+}
+
+.header-nav-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: var(--font-primary);
+}
+
+.header-nav-right li {
+    list-style: none;
+}
+
+.header-nav-right a {
+    text-decoration: none;
+    color: #1f2125;
+    cursor: pointer;
+}
+
+.header-nav-right a:hover {
+    color: var(--color-primary);
+}
+
+.header-nav-right-button {
+    width: 170px;
+    height: 46px;
+    background: #1464F4;
+    color: #fff;
+    font-size: 16px;
+    font-family: var(--font-primary);
+    border: none;
+    border-radius: 3px;
+    padding: 0 24px;
+    margin: 0 12px 0 25px;
+    font-weight: 600;
+}
+
+.header-nav-right-button:hover {
+    background-color: #fff;
+    border: 1px solid #1464F4;
+    color: #1464F4;
+    cursor: pointer;
+}
+
+
+.button-text:hover {
+    color: #1464F4;
+}
+
+.nav-bars {
+    font-size: 24px;
+    margin-left: 30px;
+    padding: 0 10px;
+}
+
+.slidebar { 
+    z-index: 1;
+    position:fixed;
+    box-sizing: border-box;
+    width: 344px;
+    height: 100%;
+    left: -350px;
+    top: 0px;
+    list-style-type: none;
+    background-color: white;
+    padding: 20px;
+    transition: all .3s;
+}
+
+  .slidebar > ul > li { 
+    font-size: 18px;
+    padding-top: 25px;
+}
+
+  .slidebar > ul > li > a{  
+    padding: 10px;
+    font-size: 14px;
+    text-decoration: none;
+    color: black;
+    line-height: 3;
+    box-sizing: border-box;
+  
+}
+
+  .slidebar > ul > li > a:hover {  
+    height: auto;
+    border: 5px dotted rgb(175, 218, 235);
+    border-radius: 5px;
+    background-color: rgb(175, 218, 235);
+}
+
+  #check{
+    display: none;
+
+}
+
+  label #btn, label #cancel {
+    position: absolute;
+    cursor: pointer;
+  
+}
+
+  label #btn {
+    position: absolute;
+    top: 6px;
+    font-size: 32px;
+    color: black;
+    right: 50px;
+    &:hover{
+        color: blue;
+    }
+}
+
+  label #cancel {
+    z-index: 1111;
+    left: -190px;
+    top: 17px;
+    font-size: 30px;
+    padding: 4px 9px;
+    transition: all .3s ease;
+    &:hover{
+        color: blue;
+    }
+}
+
+  #check:checked ~ .slidebar { 
+       left: 78%;
+}
+
+  #check:checked ~ label #btn {
+    left: 250px;
+    opacity: 0;
+    pointer-events: none;
+}
+
+  #check:checked ~ label #cancel {
+    left: 98%;
+    position: fixed;
+  
+}
+
+
+.banner-page {
+    margin-top: 74px;
+    width: 100%;
+    min-height: auto;
+    object-fit: cover;
+    position: relative;
+}
+
+.banner-title {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    width: 100%;
+    color: #fff;
+    top: 92%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.container-car,
+.container-bikes {
+    padding: 96px 0;
+
+}
+
+.slide-product-car,
+.slide-product-bikes {
+    width: 100%;
+    margin: auto;
+    padding: 0 16px;
+    background: -webkit-linear-gradient(0deg,#F7F9F9 0%,rgba(247,249,249,0.00) 49.93%);;
+}
+
+.name-product > ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.name-product > ul > li {
+    list-style: none;
+    font-size: 32px;
+    font-family: 'Young Serif', serif;
+    margin-right: 60px;
+    
+}
+
+.name-car {
+    color: #000000b0;
+}
+
+.image-page {
+    text-align: center;
+}
+
+.carousel-control-next-icon, 
+.carousel-control-prev-icon {
+    background-color: #000;
+}
+
+.info-car,
+.info-bike {
+    display: flex;
+    justify-content: space-around;
+    font-family: Mulish, sans-serif;
+}
+
+.title .disc {
+    font-size: 20px;
+    font-weight: 550;
+    text-align: center;
+}
+
+.button-product {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    gap: 1.875rem;
+}
+.btn-primary-blue, 
+.btn-primary-white {
+    width: 196px;
+    height: 50px;
+    margin: 20px 16px 60px 0;
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: 550;
+    font-family: Mulish, sans-serif;
+    transition: 0.4s;
+}
+
+.btn-primary-blue {
+    color: #fff;
+    background-color: #1464F4;
+    border: none;
+}
+
+.btn-primary-blue:hover {
+    border: 1px solid #1464F4;
+    background-color: #fff;
+    color: #1464F4;
+    
+}
+
+.btn-primary-white {
+    color: #1464F4;
+    background-color: #fff;
+    border: 1px solid #1464F4;
+    
+}
+
+.btn-primary-white:hover  {
+    background-color: #1464F4;
+    color: #fff;
+}  
+
+.name-bike {
+    font-size: 24px;
+    color: #000000b0;
+}
+
+/* Battery */
+
+.block-battery {
+   height: 850px;
+}
+
+.container-battery {
+    width: 1440px;
+    margin: auto;
+    display: flex;
+}
+
+.block-battery-left {
+    display: block;
+    width: 50%;
+    height: auto;
+    padding: 0 15px;
+}
+
+.battery-car,
+.battery-Bike {
+    width: 100%;
+    height: 48%;
+}
+
+.battery-car {
+    width: 100%;
+    background: url(./img/br-left.jpg)no-repeat;
+    background-size: cover;
+    position: relative;
+    cursor: pointer;
+    background-position: bottom;
+}
+
+.title-field {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: #fff;
+    transition: ease-in-out 0.5s;
+    transform: translateY(65%);
+    padding: 30px;
+}
+
+.battery-car:hover .title-field,
+.battery-Bike:hover .title-field{
+    background: linear-gradient(359deg,#000 0.54%,rgba(0,0,0,0.00) 98.5%);
+    bottom:36%;
+}   
+
+.battery-car:hover .field-disc,
+.battery-Bike:hover .field-disc {
+    opacity: 1;
+}
+
+.discrip,
+.view-more,
+.discrip-right,
+.view-more-right {
+    padding-top: 16px;
+}
+
+.field-disc {
+    transition: ease-in-out 0.5s;
+    opacity: 0;
+}
+
+.battery-Bike {
+    background: url(./img/br-left-2.jpg);
+    background-size: cover;
+    position: relative;
+    margin-top: 30px;
+}
+
+/* End battery-left */
+
+.block-battery-right {
+    width: 50%;
+    height: 800px;
+    background-color: #f7f9f9;
+    padding: 30px;
+}
+
+.mobile-charger {
+    height: 100%; 
+    color: #000;
+}
+
+.card-right:hover {
+    text-decoration: none;
+}
+
+.view-more-right {
+    visibility: hidden;
+}
+
+.mobile-charger:hover .view-more-right{
+    visibility: visible;
+    color: #1464F4;
+}
+
+/* Service */
+
+.block-service {
+    height: 700px;
+    width: 100%;
+    margin-top: 40px;
+    background: url(./img/image-service.jpg)no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+}
+
+.container-service{
+    height: 100%;
+    align-items: center;
+    display: flex;
+    background: linear-gradient(360deg,rgba(22,22,0,0.80) 8.43%,rgba(22,22,0,0.00) 100%);
+
+}
+
+.card-service {
+    color: #fff;
+    width: 30%;
+    margin-left: 96px;
+}
+/* End Service */
+
+.green-tree-vf {
+    width: 85%;
+    height: 540px;
+    background: url(./img/img-tree.jpg)no-repeat;
+    background-size: cover;
+    margin: auto;
+    margin-top: 96px;
+    position: relative;
+}
+.layer {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(270deg,rgba(22,22,0,0.80) 8.43%,rgba(22,22,0,0.00) 100%);
+}
+
+.green-tree-vf .container {
+    width: 400px;
+    color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    right: 6%;
+    top: 16%;
+    position: absolute;
+}
+
+/* Showroom & Sale */
+
+.block-sale {
+    height: 600px;
+}
+
+.container-sale {
+    height: 420px;
+    margin: 0 110px;
+}
+
+.container-sale .row {
+    height: 100%;
+    gap: 34px;
+    justify-content: center;
+}
+
+.col-left {
+    width: 45%;
+    background: url(./img/showroom.jpg);
+    background-size: cover;
+    cursor: pointer;
+    position: relative;
+}
+
+.field-showroom,
+.field-sale {
+    position: absolute;
+    font-size: 28px;
+    bottom: 0;
+    left: 0;
+    color: #fff;
+    transition: ease-in-out 0.5s;
+    transform: translateY(32%);
+    padding: 30px;
+}
+
+.left-disc {
+    display: none;
+}
+
+.col-left:hover .left-disc,
+.col-right:hover .left-disc {
+    display: block;
+}
+
+.col-left:hover .field-showroom,
+.col-right:hover .field-sale {
+    width: 100%;
+    bottom: 9%;
+    background: linear-gradient(359deg,#000 0.54%,rgba(0,0,0,0.00) 98.5%);
+}
+
+.col-right {
+    cursor: pointer;
+    width: 45%;
+    background: url(./img/saler.jpg);
+    background-size: cover;
+    position: relative;
+}
+/* End Showroom & Sale */
+
+.block-register {
+    margin-top: 20px;
+    background: url(./img/form-register.jpeg)no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.container-register {
+    height: 450px;
+    text-align: center;
+    align-items: center;
+    background: linear-gradient(359deg,#000 0.54%,rgba(0,0,0,0.00) 98.5%);
+
+}
+
+.form-register {
+    width: 620px;
+    padding: 96px 0px;
+    color: #fff;
+    font-weight: 600;
+    margin: auto;
+}
+
+.form-register div{
+    float: left;
+}
+
+.form-register .p1 {
+    margin: 20px 10px;
+}
+
+.form-register .p2 {
+    margin: 20px 0 0 20px;
+    font-size: 12px;
+  
+}
+
+.form-register .p2 a {
+    color: #fff;
+}
+
+.form-register input {
+    width: 645px;
+    height: 50px;
+    position: relative;
+    border: 3px;
+}
+
+.form-register .btn-regis {
+    left: 60%;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+}
+
+/* Footer */
+
+footer {
+    background-color: #f8f8f8;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    padding-left: 1%;
+}
+.fmenu {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    float: left;
+}
+
+.fmenu > li > a {
+    padding: 25px;
+    color: #8a8a8a;
+}
+
+.fmenu > li > a:hover {
+    color: #1464F4;
+    text-decoration: none;
+}
+
+.fmenu-1 {
+    list-style-type: none;
+    margin: 0;
+    display: inline-block;
+}
+
+.fmenu-1 li {
+    font-weight: 500;
+    margin: 18px 0;
+}
+
+.icon-down {
+    margin-left: 8px;
+    cursor: pointer;
+}
+
+.fmenu-1 > li > a{
+    color: black;
+    padding-top: 5%;
+}

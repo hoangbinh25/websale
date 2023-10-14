@@ -1,0 +1,779 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Young+Serif&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="./responsive.css">
+    <link rel="shortcut icon" href="https://storage.googleapis.com/vinfast-data-01/Vinfast-logo.png" type="image/png">
+    
+    <title>Cửa Hàng Bán Xe</title>
+</head>
+<body>
+    <div class="main">
+        <!-- Header -->
+        <header>
+          <div class="header-nav-main">
+              <div class="header-logo">
+                  <a href="./index.html">
+                      <img src="./img/VinFast-logo.svg" alt="Logo Vinfast">
+                  </a>
+              </div>
+
+              <div class="header-nav">
+                  <ul class="header-nav-list">
+                      <li><a href="/intro/Gioithieu.html">Giới thiệu</a></li>
+                      <li><a href="#container-Car">Ô tô</a></li>
+                      <li><a href="#container-Bike">Xe máy điện</a></li>
+                      <li><a href="/service/service.html">Dịch vụ hậu mãi</a></li>
+                      <li><a href="#block-Battery">Pin và trạm sạc</a></li>
+                  </ul>
+                </div>
+                  <div class="header-nav-right">
+                    <li><a href="/login/login.html">Tài khoản</a></li>
+                    <a href="/driver-test/drivecar.html"><button class="header-nav-right-button">Đăng kí lái thử</button></a>
+                    <input type="checkbox" id="check">
+                    <label for="check">
+                        <i style="padding-top: 1%;" class="fa fa-bars" id="btn"></i>
+                        <i class="fa fa-times" id="cancel"></i>
+                    </label>
+                    <div class="slidebar">
+                        <ul style="list-style-type: none;">
+                            <li>Tiện ích <br>
+                            <a href="">So Sánh</a><br>
+                            <a href="">Dự tính chi phí lăn bánh </a><br>
+                            <a href="">Dự toán vay trả góp</a><br>
+                            <a href="">Thẩm định vay trả góp</a>
+                            </li>
+                            <li>Tin Tức <br>
+                                <a href="">Công ty</a><br>
+                                <a href="">Cộng đồng </a><br>
+                            </li>
+                            <li>Hỗ trợ <br>
+                                <a href="">Tìm Showroom & Trạm sạc</a><br>
+                                <a href="">Câu hỏi thường gặp </a><br>
+                            </li>
+                            <li>Mua sắm <br>
+                                <a href="">Phụ kiện xe</a><br>
+                            </li>
+                            <li>Thảo luận <br>
+                                <a href="">Cộng đồng Vinfast toàn cầu</a><br>
+                            </li>
+                        </ul>
+                    </div>
+                  </div>
+        </header>
+        <!-- End header -->
+
+        <!-- Banner -->
+        <div class="banner">
+          <div id="banner-product" class="carousel slide myslide" data-ride="carousel">
+              <ol class="carousel-indicators">
+                <li data-target="#banner-product" data-slide-to="0" class="active"></li>
+                <li data-target="#banner-product" data-slide-to="1"></li>
+                <li data-target="#banner-product" data-slide-to="2"></li>
+                <li data-target="#banner-product" data-slide-to="3"></li>
+              </ol>
+              <div class="carousel-inner banner-page" role="listbox">
+                <div class="carousel-item active">
+                  <img src="./img/banner-vf-6.jpeg" width="100%" alt="Vinfast VF6">
+                  <h2 class="banner-title">VINFAST CHÍNH THỨC RA MẮT MẪU SUV ĐIỆN VF 6 DÀNH CHO GIA ĐÌNH VIỆT</h2>
+                </div>
+                <div class="carousel-item">
+                  <img src="./img/banner-vf-8.webp" width="100%" alt="VinFast VF8">
+                  <h2 class="banner-title">VINFAST CẬP NHẬT PHẦN MỀM FRS 8.7.9.2 CHO Ô TÔ ĐIỆN VF 8</h2>
+                </div>
+                <div class="carousel-item">
+                  <img src="./img/banner-vf-9.webp" width="100%" alt="VinFast VF9">
+                  <h2 class="banner-title">VINFAST VF 9 CÓ PHẠM VI LÁI ĐƯỢC EPA CHỨNG NHẬN ĐẠT 330 DẶM</h2>
+                </div>
+                <div class="carousel-item">
+                  <img src="./img/banner-vf-e34.webp" width="100%" alt="VinFast VFe34">
+                  <h2 class="banner-title">CHÍNH SÁCH HỖ TRỢ LÃI SUẤT CHO KHÁCH HÀNG KHI MUA Ô TÔ ĐIỆN VINFAST</h2>
+                </div>
+              </div>
+              <a class="carousel-control-prev" href="#banner-product" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="carousel-control-next" href="#banner-product" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
+              <!-- Optional JavaScript -->
+              <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+              <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+              <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+              <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+          </div>
+        </div>
+        <!-- End Banner -->
+
+        <!-- Content -->
+        <div id="container-Car" class="container-car">
+          <!-- Car -->
+          <div class="slide-product-car">
+              <div class="name-product">
+                <ul>
+                  <li><a href="" class="name-car">VF5</a></li>
+                  <li><a href="" class="name-car">VFe34</a></li>
+                  <li><a href="" class="name-car">VF8</a></li>
+                  <li><a href="" class="name-car">VF9</a></li>
+                </ul>
+              </div>
+                <!-- End Name Car -->
+
+                <!-- Image car -->
+            <div id="image-product" class="carousel slide myslide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                  <li data-target="#image-product" data-slide-to="0" class="active"></li>
+                  <li data-target="#image-product" data-slide-to="1" class="active"></li>
+                  <li data-target="#image-product" data-slide-to="2" class="active"></li>
+                  <li data-target="#image-product" data-slide-to="3" class="active"></li>
+                </ol>
+                <div class="carousel-inner image-page" role="listbox">
+                  <div class="carousel-item active">
+                    <img src="./img/name-vf-5.webp" width="60%" alt="">
+                    <div class="info-car">
+                      <div class="title">
+                        Dòng xe
+                        <div class="disc">
+                          SUV
+                        </div>
+                      </div>
+        
+                      <div class="title">
+                        Số chỗ ngồi
+                        <div class="disc">
+                          5 chỗ
+                        </div>
+                      </div>
+        
+                      <div class="title" style="text-align: center;">
+                        Quãng đường
+                        <div class="disc">
+                          Trên 300 km
+                        </div>
+                      </div>
+        
+                      <div class="title" style="text-align: center;">
+                        Giá từ
+                        <div class="disc">
+                          458.000.000 VNĐ
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!--  -->
+                  <div class="carousel-item">
+                    <img src="./img/name-vf-e34.webp" width="60%" alt="">
+                    <div class="info-car">
+                      <div class="title">
+                        Dòng xe
+                        <div class="disc">
+                          SUV
+                        </div>
+                      </div>
+        
+                      <div class="title">
+                        Số chỗ ngồi
+                        <div class="disc">
+                          5 chỗ
+                        </div>
+                      </div>
+        
+                      <div class="title" style="text-align: center;">
+                        Quãng đường
+                        <div class="disc">
+                          ~318.6 km
+                        </div>
+                      </div>
+        
+                      <div class="title" style="text-align: center;">
+                        Giá từ
+                        <div class="disc">
+                          710.000.000 VNĐ
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!--  -->
+                  <div class="carousel-item">
+                    <img src="./img/name-vf-8.webp" width="60%" alt="">
+                    <div class="info-car">
+                      <div class="title">
+                        Dòng xe
+                        <div class="disc">
+                          SUV
+                        </div>
+                      </div>
+        
+                      <div class="title">
+                        Số chỗ ngồi
+                        <div class="disc">
+                          5 chỗ
+                        </div>
+                      </div>
+        
+                      <div class="title" style="text-align: center;">
+                        Quãng đường
+                        <div class="disc">
+                          ~ 400 km
+                        </div>
+                      </div>
+        
+                      <div class="title" style="text-align: center;">
+                        Giá từ
+                        <div class="disc">
+                          1.090.000.000 VNĐ
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!--  -->
+                  <div class="carousel-item">
+                    <img src="./img/name-vf-9.webp" width="60%" alt="">
+                    <div class="info-car">
+                      <div class="title">
+                        Dòng xe
+                        <div class="disc">
+                          SUV
+                        </div>
+                      </div>
+        
+                      <div class="title">
+                        Số chỗ ngồi
+                        <div class="disc">
+                          6-7 chỗ
+                        </div>
+                      </div>
+        
+                      <div class="title" style="text-align: center;">
+                        Quãng đường
+                        <div class="disc">
+                          ~ 423 km
+                        </div>
+                      </div>
+        
+                      <div class="title" style="text-align: center;">
+                        Giá từ
+                        <div class="disc">
+                          1.491.000.000 VNĐ
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!--  -->
+                <!-- Button -->
+                <div class="button-product">
+                  <div>
+                    <button class="btn-primary-blue">ĐẶT CỌC</button>  
+                  </div>
+    
+                  <div>
+                    <button class="btn-primary-white">XEM CHI TIẾT</button>
+                  </div>
+                  <!-- End Button -->
+                </div>
+                <a class="carousel-control-prev" href="#image-product" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#image-product" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+                <!-- Optional JavaScript -->
+                <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+                <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+                <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+            </div>
+          </div>
+        </div>
+        <div id="container-Bike" class="container-bikes">
+          <div class="slide-product-bikes">
+              <div class="name-product">
+                <ul>
+                  <li><a href="" class="name-bike">EVO200 LITE</a></li>
+                  <li><a href="" class="name-bike">EVO200</a></li>
+                  <li><a href="" class="name-bike">FELIZ S</a></li>
+                  <li><a href="" class="name-bike">KLARA S</a></li>
+                  <li><a href="" class="name-bike">VENTO S</a></li>
+                  <li><a href="" class="name-bike">THEON</a></li>
+                  <li><a href="" class="name-bike">THEON S</a></li>
+                </ul>
+              </div>
+                <!-- End Name Bike -->
+  
+                <!-- Image Bike -->
+            <div id="image-product-bike" class="carousel slide myslide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                  <li data-target="#image-product-bike" data-slide-to="0" class="active"></li>
+                  <li data-target="#image-product-bike" data-slide-to="1"></li>
+                  <li data-target="#image-product-bike" data-slide-to="2"></li>
+                  <li data-target="#image-product-bike" data-slide-to="3"></li>
+                  <li data-target="#image-product-bike" data-slide-to="4"></li>
+                  <li data-target="#image-product-bike" data-slide-to="5"></li>
+                  <li data-target="#image-product-bike" data-slide-to="6"></li>
+                  <li data-target="#image-product-bike" data-slide-to="7"></li>
+                </ol>
+                <div class="carousel-inner image-page" role="listbox">
+                  <div class="carousel-item active">
+                    <img src="./img/Evo200-lite.webp" width="60%" alt="">
+                    <div class="info-bike">
+                      <div class="title">
+                        Tốc độ tối đa
+                        <div class="disc">
+                          49km/h
+                        </div>
+                      </div>
+          
+                      <div class="title">
+                        Quãng đường 1 lần sạc
+                        <div class="disc">
+                          205km
+                        </div>
+                      </div>
+          
+                      <div class="title" style="text-align: center;">
+                        Cốp xe
+                        <div class="disc">
+                          22 lít
+                        </div>
+                      </div>
+          
+                      <div class="title" style="text-align: center;">
+                        Giá chỉ từ
+                        <div class="disc">
+                          22.000.000 VNĐ
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!--  -->
+                  <div class="carousel-item">
+                    <img src="./img/Evo200.webp" width="60%" alt="">
+                    <div class="info-bike">
+                      <div class="title">
+                        Tốc độ tối đa
+                        <div class="disc">
+                          70 km/h
+                        </div>
+                      </div>
+          
+                      <div class="title">
+                        Quãng đường 1 lần sạc
+                        <div class="disc">
+                          203 km
+                        </div>
+                      </div>
+          
+                      <div class="title" style="text-align: center;">
+                        Cốp xe
+                        <div class="disc">
+                          22 lít
+                        </div>
+                      </div>
+          
+                      <div class="title" style="text-align: center;">
+                        Giá chỉ từ
+                        <div class="disc">
+                          22.000.000 VNĐ
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!--  -->
+                  <div class="carousel-item">
+                    <img src="./img/FelizS.webp" width="60%" alt="">
+                    <div class="info-bike">
+                      <div class="title">
+                        Tốc độ tối đa
+                        <div class="disc">
+                          78 km/h
+                        </div>
+                      </div>
+          
+                      <div class="title">
+                        Quãng đường 1 lần sạc
+                        <div class="disc">
+                          198 km
+                        </div>
+                      </div>
+          
+                      <div class="title" style="text-align: center;">
+                        Cốp xe
+                        <div class="disc">
+                          25 lít
+                        </div>
+                      </div>
+          
+                      <div class="title" style="text-align: center;">
+                        Giá chỉ từ
+                        <div class="disc">
+                          29.900.000 VNĐ
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!--  -->
+                  <div class="carousel-item">
+                    <img src="./img/KlaraS.webp" width="60%" alt="">
+                    <div class="info-bike">
+                      <div class="title">
+                        Tốc độ tối đa
+                        <div class="disc">
+                          78 km/h
+                        </div>
+                      </div>
+          
+                      <div class="title">
+                        Quãng đường 1 lần sạc
+                        <div class="disc">
+                          194 km
+                        </div>
+                      </div>
+           
+                      <div class="title" style="text-align: center;">
+                        Cốp xe
+                        <div class="disc">
+                          23 lít
+                        </div>
+                      </div>
+          
+                      <div class="title" style="text-align: center;">
+                        Giá chỉ từ
+                        <div class="disc">
+                          36.900.000 VNĐ
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!--  -->
+                  <div class="carousel-item">
+                    <img src="./img/Theon.webp" width="60%" alt="">
+                    <div class="info-bike">
+                      <div class="title">
+                        Tốc độ tối đa
+                        <div class="disc">
+                          89 km/h
+                        </div>
+                      </div>
+          
+                      <div class="title">
+                        Quãng đường 1 lần sạc
+                        <div class="disc">
+                          160 km
+                        </div>
+                      </div>
+          
+                      <div class="title" style="text-align: center;">
+                        Cốp xe
+                        <div class="disc">
+                          25 lít
+                        </div>
+                      </div>
+          
+                      <div class="title" style="text-align: center;">
+                        Giá chỉ từ
+                        <div class="disc">
+                          56.000.000 VNĐ
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!--  -->
+                  <div class="carousel-item">
+                    <img src="./img/TheonS.webp" width="60%" alt="">
+                    <div class="info-bike">
+                      <div class="title">
+                        Tốc độ tối đa
+                        <div class="disc">
+                          90 km/h
+                        </div>
+                      </div>
+          
+                      <div class="title">
+                        Quãng đường 1 lần sạc
+                        <div class="disc">
+                          101 km
+                        </div>
+                      </div>
+          
+                      <div class="title" style="text-align: center;">
+                        Cốp xe
+                        <div class="disc">
+                          17 lít
+                        </div>
+                      </div>
+          
+                      <div class="title" style="text-align: center;">
+                        Giá chỉ từ
+                        <div class="disc">
+                          63.900.000 VNĐ
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!--  -->
+                  <div class="carousel-item">
+                    <img src="./img/VentoS.webp" width="60%" alt="">
+                    <div class="info-bike">
+                      <div class="title">
+                        Tốc độ tối đa
+                        <div class="disc">
+                          99 km/h
+                        </div>
+                      </div>
+          
+                      <div class="title">
+                        Quãng đường 1 lần sạc
+                        <div class="disc">
+                          150 km
+                        </div>
+                      </div>
+          
+                      <div class="title" style="text-align: center;">
+                        Cốp xe
+                        <div class="disc">
+                          24 lít
+                        </div>
+                      </div>
+          
+                      <div class="title" style="text-align: center;">
+                        Giá chỉ từ
+                        <div class="disc">
+                          69.900.000 VNĐ
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!--  -->
+                <a class="carousel-control-prev" href="#image-product-bike" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#image-product-bike" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+                <!-- Optional JavaScript -->
+                <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+                <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+                <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+            </div>
+
+            <!-- Button -->
+            <div class="button-product">
+              <div>
+                <button class="btn-primary-blue">MUA XE</button>  
+              </div>
+              <div>
+                <button class="btn-primary-white">XEM CHI TIẾT</button>
+              </div>
+              <!-- End Button -->
+            </div>
+          </div>
+          <!-- End Bikes -->
+        </div>
+          <div id="block-Battery" class="block-battery">
+            <div class="container-battery">
+              <div class="block-battery-left">
+                <!-- Battery-Car -->
+                <div class="battery-car">
+                  <div class="title-field">
+                    <div class="title-battery" style="font-size: 24px;">Pin & Trạm sạc ô tô điện
+                    </div>
+                      <div class="field-disc">
+                        <div class="discrip">
+                          Với phương châm luôn đặt lợi ích Khách hàng lên hàng đầu, VinFast áp dụng chính sách cho thuê pin độc đáo, ưu việt và khác biệt với tất cả các mô hình cho thuê pin từ trước tới nay trên thế giới.
+                        </div>
+                        <div class="view-more">XEM CHI TIẾT
+                          </div>
+                      </div>
+                    </div>
+                  </div>
+                <!-- End Battery-Car -->
+
+                <!-- Battery-bike -->
+                <div class="battery-Bike">
+                  <div class="title-field">
+                    <div class="title-battery" style="font-size: 24px;">Pin & Trạm sạc xe máy điện
+                    </div>
+                      <div class="field-disc">
+                        <div class="discrip">
+                          Với phương châm luôn đặt lợi ích Khách hàng lên hàng đầu, VinFast áp dụng chính sách cho thuê pin độc đáo, ưu việt và khác biệt với tất cả các mô hình cho thuê pin từ trước tới nay trên thế giới.
+                        </div>
+                        <div class="view-more">XEM CHI TIẾT
+                          </div>
+                      </div>
+                    </div>
+                  </div>
+                <!-- End battery left -->
+              </div>
+              <div class="block-battery-right">
+                <a href="" class="card-right">
+                  <div class="mobile-charger">
+                    <div class="title-battery" style="font-size: 24px;">Thiết bị sạc di động
+                    </div>
+                      <div class="field-disc-right">
+                        <div class="discrip-right">
+                          VinFast cung cấp đa dạng giải pháp sạc để đáp ứng nhu cầu sử dụng của khách hàng một cách thuận tiện nhất.
+                        </div>
+                        <div class="view-more-right" style="font-size: 14px;">XEM CHI TIẾT
+                          </div>
+                  </div>
+                  <div class="image-right">
+                    <img src="./img/mobile-charger.webp" alt="" width="100%">
+                  </div>
+                </div>
+                </a>
+              <!-- End battery right -->
+            </div>
+          </div>
+      </div>
+      <!-- Service -->
+      <div class="block-service">
+        <div class="container-service">
+          <div class="card-service">
+            <div class="title-battery" style="font-size: 28px;">Bảo hành & Dịch vụ
+            </div>
+                <div class="discrip" style="font-size: 19px;">
+                  VinFast đã đầu tư nghiêm túc và bài bản để phát triển hệ thống Showroom, Nhà phân phối và xưởng dịch vụ rộng khắp, đáp ứng tối đa nhu cầu của Khách hàng.
+
+                </div>
+                <button class="btn-primary-blue">ĐẶT LỊCH BẢO DƯỠNG</button>
+                <button class="btn-primary-white">CHÍNH SÁCH</button>
+          </div>
+        </div>
+      </div>
+      <!-- End Service  -->
+
+      <!-- Green tree -->
+      <div class="green-tree-vf">
+        <div class="layer"></div>
+        <div class="container">
+          <div class="title-image" style="font-size: 28px;">
+            Phủ xanh tương lai
+          </div>
+          <div class="disc-image"style="margin: 10px 0px;" >
+            Dự án Phủ xanh Tương lai là minh chứng cho cam kết mạnh mẽ của VinFast hướng tới cuộc cách mạng di chuyển điện hóa và một tương lai xanh trên toàn cầu. Một trong những mục tiêu của dự án là hiện thực hóa ‘món quà’ từ những khách hàng tiên phong dành cho môi trường, cùng chung tay kiến tạo một tương lai phát triển bền vững cho tất cả.
+          </div>
+          <button class="btn-primary-blue">
+            XEM CHI TIẾT
+          </button>
+        </div>
+      </div>
+      <!-- End green tree -->
+
+      <!-- Showroom & Sale -->
+      <div class="block-sale pd-top">
+        <div class="container-sale">
+          <div class="row">
+            <div class="col-left">
+              <div class="field-showroom">
+                <div class="title-left">Showroom & Trạm sạc</div>
+                <div class="left-disc" style="font-size: 16px;">TÌM HIỂU THÊM</div>
+              </div>
+            </div>
+            <div class="col-right">
+              <div class="field-sale">
+                <div class="title-right">Cộng đồng VinFast toàn cầu</div>
+                <div class="left-disc" style="font-size: 16px;">TÌM HIỂU THÊM</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End Showroom & Sale -->
+
+      <!-- Register info -->
+      <div class="block-register">
+        <div class="container-register">
+          <div class="form-register">
+            <h3>Đăng ký nhận thông tin</h3>
+            <p class="p1">Đăng ký nhận thông tin chương trình khuyến mãi, dịch vụ VinFast.</p>
+            <div>
+              <input type="email" name="email-user" id="" placeholder="Nhập email của bạn" required="Vui lòng nhập email của bạn"><button class="btn-primary-blue btn-regis">Đăng kí</button>
+            </div>
+            <div><p class="p2">Bằng cách đăng ký, Quý khách xác nhận đã đọc, hiểu và đồng ý với <a href="https://vinfastauto.com/vn_vi/dieu-khoan-phap-ly"> Chính sách Quyền riêng tư</a> của VinFast.</p></div>
+          </div>
+        </div>
+      </div>
+      <!-- End register info -->
+    
+      <!-- Footer -->
+      <footer class="footer">
+        <div style="width: 50%;">
+            <img src="https://vinfastauto.com/themes/porto/img/homepage-v2/logo-footer-v2.svg" alt="">
+            <br><br>
+            <p>
+                <span>Công ty TNHH kinh doanh Thương mại và Dịch vụ Vinfast</span> <br><br>
+                <span>
+                    <strong>MST/MSDN:</strong>
+                    0108926276 do Sở KHĐT TP Hà Nội cấp lần đầu ngày 1/10/2019 <br>
+                    và các lần thay đổi tiếp theo.
+                </span><br><br>
+                <span>
+                    <strong>Địa chỉ trụ sở chính: </strong>
+                    Số 7, đường Bằng Lăng 1, Khu đô thị Vinhomes Riverside, <br>
+                    Phường Việt Hưng, Quận Long Biên, thành phố Hà Nội, Việt Nam
+                </span>
+
+                    <ul class="fmenu"> <strong>Hệ sinh thái</strong>
+                        <li><a href="https://vinhomes.vn/vi">Vinhomes</a></li>
+                        <li><a href="https://vinmec.com/vi/">Vinmec</a></li>
+                        <li><a href="https://vinpearl.com/vi">Vinpearl</a></li>
+                    </ul>
+            </p>
+        </div>
+
+        <div style="width: 25%;">
+            <ul class="fmenu-1">
+                <li><a href="/Gioithieu.html">VỀ VINFAST</a></li>
+                <li><a href="https://vinfastauto.com/vn_vi/ve-vingroup">VỀ VINGROUP</a></li>
+                <li class="news"><a href="">TIN TỨC</a><i class="fa fa-chevron-down icon-down" aria-hidden="true"></i></li>
+                <li><a href="https://vinfastauto.com/vn_vi/uu-dai">ƯU ĐÃI</a></li>
+                <li><a href="#">SHOWROOM & ĐẠI LÝ</a></li>
+                <li><a href="#">ĐIỀU KHOẢN CHÍNH SÁCH</a><i class="fa fa-chevron-down icon-down" aria-hidden="true"></i></li>
+            </ul>
+        </div>
+        <div style="width: 25%;">
+            <p>HOTLINE</p>
+            <a style="color: black; text-decoration: none; " href="">
+                <i class="fas fa-phone-alt"></i>
+            <span style="padding-left: 10px; color: #1464f4;">
+                1900 23 23 89
+            </span>
+            </a> <br>
+            <a style="color: black; text-decoration: none; " href="">
+                <i class="fas fa-envelope"></i>
+            <span style="padding-left: 10px; color: #1464f4;">
+                support.vn@vinfastauto.com
+            </span>
+            </a>
+
+
+            <br><br>
+            <p>
+                <span>Kết nối với Vinfast</span> <br>
+                <a style="color: black;" href="https://www.facebook.com/VinFastAuto.Official"><i class="fab fa-facebook"></i></i></a>
+                <a style="color: black;" href="https://www.youtube.com/channel/UCA5OijDHvvWJ3vy5iVdWcAQ"><i class="fab fa-youtube"></i></a>
+            </p>
+            <div>
+                <img align="left" src="https://vinfastauto.com/themes/porto/img/bct.svg" alt="">
+            </div>
+    </footer>
+    </div>
+</body>
+</html>
